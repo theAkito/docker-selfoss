@@ -1,0 +1,7 @@
+selfoss:
+  image: akito13/selfoss
+  container_name: selfoss
+  ports:
+    - 8800:8888
+  volumes:
+    - /home/selfoss/data:/selfoss/data
