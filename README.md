@@ -36,7 +36,7 @@ docker build -t akito-selfoss:test -f Dockerfile .
 
 ### Ports
 
-- 8888
+- 8800
 
 ### Environment variables
 
@@ -48,16 +48,6 @@ docker build -t akito-selfoss:test -f Dockerfile .
 | **UPLOAD_MAX_SIZE** | Attachment size limit | *optional* | 25M
 | **LOG_TO_STDOUT** | Enable nginx and php error logs to stdout | *optional* | false
 | **MEMORY_LIMIT** | PHP memory limit | *optional* | 128M
-
-### Docker-compose.yml
-
-```yml
-selfoss:
-  image: hardware/selfoss
-  container_name: selfoss
-  volumes:
-    - /mnt/docker/selfoss:/selfoss/data
-```
 
 ## License
 Copyright (C) 2020  Akito <the@akito.ooo>
