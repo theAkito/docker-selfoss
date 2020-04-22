@@ -1,7 +1,7 @@
 FROM akito13/alpine
 
 LABEL maintainer="Akito <the@akito.ooo>"
-LABEL version="0.1.0"
+LABEL version="0.2.0"
 LABEL description="Multipurpose rss reader, live stream, mashup, aggregation web application"
 
 ARG VERSION=2.19
@@ -9,7 +9,7 @@ ARG COMMIT=f0759b2
 
 ENV GID=991 UID=991 CRON_PERIOD=15m UPLOAD_MAX_SIZE=25M LOG_TO_STDOUT=false MEMORY_LIMIT=128M
 
-RUN echo "@community http://nl.alpinelinux.org/alpine/v3.8/community" >> /etc/apk/repositories \
+RUN echo "@community http://nl.alpinelinux.org/alpine/v3.10/community" >> /etc/apk/repositories \
  && apk -U upgrade \
  && apk add -t build-dependencies \
     curl \
