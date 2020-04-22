@@ -1,10 +1,12 @@
-# hardware/selfoss
+# akito13/selfoss
 
 ![selfoss](https://i.imgur.com/8hJyBgk.png "selfoss")
 
 ### What is this ?
 
 The new multipurpose rss reader, live stream, mashup, aggregation web application.
+
+This is a fork of https://github.com/hardware/selfoss .
 
 ### Features
 
